@@ -1,0 +1,66 @@
+{
+	"manifestVersion": 1,
+	"id": "jungit-robocopy",
+	"name": "Robocopy",
+	"description": "Custom build and release tasks",
+	"version": "1.0.4",
+	"publisher": "Jungerius-IT",
+	"baseUri": "https://github.com/chrisism/VSTS.Robocopy",
+	"tags": [
+		"copy",
+		"move",
+		"files",
+		"folders"
+	],
+	"links": {
+		"home": {
+			"uri": "https://github.com/chrisism/VSTS.Robocopy"
+		}
+		//"getstarted": {
+		//	"uri": "https://bit.ly"
+		//},
+		//"learn": {
+		//	"uri": "https://bit.ly"
+		//},
+		//"support": {
+		//	"uri": "https://bit.ly"
+		//},
+		//"repository": {
+		//	"uri": "https://bit.ly"
+		//},
+		//"issues": {
+		//	"uri": "https://bit.ly"
+		//}
+	},
+	"branding": {
+		"color": "rgb(220, 235, 252)",
+		"theme": "light"
+	},
+	"scopes": [ "vso.work", "vso.work_write" ],
+	"targets": [
+		{
+			"id": "Microsoft.VisualStudio.Services"
+		}
+	],
+	"categories": [
+		"Build and release"
+	],
+	"icons": {
+		"default": "task/icon.png"
+	},
+	"files": [
+		{ "path": "Task" }
+	],
+	"contributions": [
+		{
+			"id": "jungit-robocopy",
+			"type": "ms.vss-distributed-task.task",
+			"targets": [
+				"ms.vss-distributed-task.tasks"
+			],
+			"properties": {
+				"name": "Task"
+			}
+		}
+	]
+}
