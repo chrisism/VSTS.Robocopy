@@ -44,10 +44,11 @@
     <Content Include="Build.bat" />
     <None Include="gruntfile.js" />
     <None Include="package.json" />
+    <Content Include="img\logo.png" />
+    <Content Include="Task\icon.png" />
     <Content Include="Task\robocopytask.ps1" />
     <Content Include="Task\task.json" />
     <None Include="vss-extension.json" />
-    <None Include="img\logo.png" />
     <None Include="settings.tfx.json" />
     <None Include=".gitignore" />
     <None Include=".tfignore" />
@@ -55,7 +56,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include=".vscode\tasks.json" />
-    <Content Include="Task\icon.png" />
   </ItemGroup>
   <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
     <TypeScriptRemoveComments>false</TypeScriptRemoveComments>

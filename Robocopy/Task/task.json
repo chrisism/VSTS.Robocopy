@@ -1,5 +1,5 @@
 {
-	"id": "7db26114-8ee0-4460-b1e6-e5fbd3a9a583",
+	"id": "0d45c14d-089f-479a-8ad8-c857190e5cba",
 	"name": "Robocopy",
 	"friendlyName": "File System - Robocopy",
 	"description": "Use Robocopy to perform a copy action.",
@@ -14,7 +14,7 @@
 	"version": {
 		"Major": "1",
 		"Minor": "0",
-		"Patch": "4"
+		"Patch": "5"
 	},
 	"minimumAgentVersion": "1.83.0",
 	"groups": [
