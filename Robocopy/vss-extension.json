@@ -2,9 +2,9 @@
 	"manifestVersion": 1,
 	"id": "jungit-robocopy",
 	"name": "Robocopy",
-	"description": "Custom build and release tasks",
+	"description": "Robocopy task wrapper for TFS/VSTS",
 	"version": "1.0.5",
-	"publisher": "Jungerius-IT",
+	"publisher": "jungeriusit",
 	"baseUri": "https://github.com/chrisism/VSTS.Robocopy",
 	"tags": [
 		"copy",

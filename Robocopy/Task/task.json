@@ -3,14 +3,14 @@
 	"name": "Robocopy",
 	"friendlyName": "File System - Robocopy",
 	"description": "Use Robocopy to perform a copy action.",
-	"author": "Jungerius IT",
+	"author": "jungeriusit",
 	"helpMarkDown": "",
 	"category": "Utility",
 	"visibility": [
 		"Build",
 		"Release"
 	],
-	"demands": [ ],
+	"demands": [],
 	"version": {
 		"Major": "1",
 		"Minor": "0",
