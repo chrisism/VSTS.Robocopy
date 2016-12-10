@@ -43,6 +43,7 @@
   <ItemGroup>
     <Content Include="Build.bat" />
     <None Include="gruntfile.js" />
+    <Content Include="overview.md" />
     <None Include="package.json" />
     <Content Include="img\logo.png" />
     <Content Include="Task\icon.png" />

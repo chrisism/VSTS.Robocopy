@@ -3,7 +3,7 @@
 	"name": "Robocopy",
 	"friendlyName": "File System - Robocopy",
 	"description": "Use Robocopy to perform a copy action.",
-	"author": "jungeriusit",
+	"author": "Jungerius-IT",
 	"helpMarkDown": "",
 	"category": "Utility",
 	"visibility": [
@@ -14,7 +14,7 @@
 	"version": {
 		"Major": "1",
 		"Minor": "0",
-		"Patch": "5"
+		"Patch": "8"
 	},
 	"minimumAgentVersion": "1.83.0",
 	"groups": [
