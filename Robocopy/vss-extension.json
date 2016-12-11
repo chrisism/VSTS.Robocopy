@@ -76,7 +76,7 @@
 				"ms.vss-distributed-task.tasks"
 			],
 			"properties": {
-				"name": "BackupDirectory"
+				"name": "BackupTask"
 			}
 		}
 	]
