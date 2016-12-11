@@ -1,10 +1,16 @@
 # Robocopy (VSTS task)
-Robocopy task for build and release pipelines in VSTS or TFS.
+Robocopy tasks for build and release pipelines in VSTS or TFS.
+
+Are these VSTS extensions helping you? 
+
+[![](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=BSMTZP9VKP8QN)
 
 ### Details
 
-With this task you can copy files and folders on the agent server using Robocopy.
+With these you can copy or backup files and folders on the agent server using Robocopy.
+Robocopy, or "Robust File Copy", is a command-line directory and/or file replication command. Robocopy functionally replaces Xcopy, with more options. It has been available as part of the Windows Resource Kit starting with Windows NT 4.0, and was first introduced as a standard feature in Windows Vista and Windows Server 2008. 
 
+### Robocopy
 ### Options
 
 - **Source:** The source where files or folders will be copied from.
@@ -19,3 +25,10 @@ With this task you can copy files and folders on the agent server using Robocopy
 - **Exclude directories:** Excludes directories that match the specified names and paths. (/xd)
 - **Number of retries:** Specifies the number of retries on failed copies. The default value of N is 1,000,000 (one million retries). (/r:<N>)
 - **Other Robocopy options:** Robocopy accepts a few command line options (e.g. /S /E /Z).
+
+### Backup folder
+### Options
+- **Source:** The source directory where files and folders will be copied from.
+- **Destination folder:** The Destination where the files will be copied to.
+- **Robocopy options:** Robocopy accepts a few command line options (e.g. /S /E /Z).
+- **Create stamped backup folder:** If set to True then it will create a dated backup folder under the destination folder (e.g. c:\\backup\\2014-05-11).

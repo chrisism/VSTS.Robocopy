@@ -41,9 +41,13 @@
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="BackupDirectory\icon.png" />
     <Content Include="Build.bat" />
+    <Content Include="BackupDirectory\backupdir.ps1" />
+    <Content Include="BackupDirectory\task.json" />
     <None Include="gruntfile.js" />
     <Content Include="overview.md" />
+    <None Include="license.md" />
     <None Include="package.json" />
     <Content Include="img\logo.png" />
     <Content Include="Task\icon.png" />
