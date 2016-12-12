@@ -3,7 +3,7 @@
 	"id": "jungit-robocopy",
 	"name": "Robocopy",
 	"description": "Robocopy task wrapper for TFS/VSTS",
-	"version": "1.0.10",
+	"version": "1.0.11",
 	"publisher": "jungeriusit",
 	"baseUri": "https://github.com/chrisism/",
 	"tags": [
@@ -31,6 +31,14 @@
 		"type": "git",
 		"uri": "https://github.com/chrisism/VSTS.Robocopy"
 	},
+	"screenshots": [
+		{
+			"path": "screenshot-01.jpg"
+		},
+		{
+			"path": "screenshot-02.jpg"
+		}
+	],
 	"branding": {
 		"color": "rgb(157, 140, 255)",
 		"theme": "light"
@@ -48,7 +56,8 @@
 		"default": "img/logo.png"
 	},
 	"files": [
-		{ "path": "Task" }
+		{ "path": "Task" },
+		{ "path": "BackupTask" }
 	],
 	"content": {
 		"details": {

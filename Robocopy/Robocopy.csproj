@@ -50,6 +50,8 @@
     <None Include="license.md" />
     <None Include="package.json" />
     <Content Include="img\logo.png" />
+    <Content Include="screenshot-01.jpg" />
+    <Content Include="screenshot-02.jpg" />
     <Content Include="Task\icon.png" />
     <Content Include="Task\robocopytask.ps1" />
     <Content Include="Task\task.json" />
