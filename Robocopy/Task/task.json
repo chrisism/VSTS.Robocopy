@@ -44,7 +44,7 @@
 		},
 		{
 			"name": "files",
-			"type": "string",
+			"type": "array",
 			"label": "Files to copy",
 			"defaultValue": "",
 			"required": false,
