@@ -19,6 +19,7 @@
     <IISExpressWindowsAuthentication />
     <IISExpressUseClassicPipelineMode />
     <UseGlobalApplicationHostFile />
+    <Use64BitIISExpress />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -42,10 +43,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="BackupTask\icon.png" />
-    <Content Include="Build.bat" />
     <Content Include="BackupTask\backupdir.ps1" />
     <Content Include="BackupTask\task.json" />
-    <None Include="gruntfile.js" />
+    <Content Include="gulpfile.js" />
     <Content Include="overview.md" />
     <None Include="license.md" />
     <None Include="package.json" />
