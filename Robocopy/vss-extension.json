@@ -3,7 +3,7 @@
 	"id": "jungit-robocopy",
 	"name": "Robocopy",
 	"description": "Robocopy task wrapper for TFS/VSTS",
-	"version": "1.0.12",
+	"version": "1.0.13",
 	"publisher": "jungeriusit",
 	"public": true, 
 	"baseUri": "https://github.com/chrisism/",

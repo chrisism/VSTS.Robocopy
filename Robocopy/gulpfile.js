@@ -57,8 +57,8 @@ gulp.task('updateVersionInMainJson', () => {
 gulp.task('updateVersionInTasks', () => {
 
     return gulp.src([
-        './ChocolateyInstalled/task.json',
-        './ChocolateyInstallPackage/task.json'
+        './Task/task.json',
+        './BackupTask/task.json'
     ], { base: './' })
         .pipe(jeditor({
             "version": {
@@ -78,6 +78,7 @@ gulp.task('createPackage', () => {
 gulp.task('publish', () => {
 
     var command = 'tfx extension publish --token ' + config.publish.token +' --auth-type pat ---service-url ' + config.publish.galleryUrl;
+    console.log(command);
     return cp.exec(command);
 });
 

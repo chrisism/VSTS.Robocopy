@@ -1,7 +1,7 @@
 param (
 	[string]$source,
 	[string]$destination,
-	[array]$files,
+	[string]$files,
 	[string]$copySubDirs,
 	[string]$copySubDirsAll,
 	[string]$purge,
@@ -59,7 +59,8 @@ if(Test-Path -Path $source) {
 		robocopy $source $destination $options
 	} else {
 
-		robocopy $source $destination $files $options
+		$fileArray = $files -split ','
+		robocopy $source $destination $fileArray $options
 	}
 
 } else {

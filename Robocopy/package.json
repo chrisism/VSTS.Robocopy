@@ -1,7 +1,7 @@
 {
     "id": "jungit-robocopy",
     "private": true,
-    "version": "1.0.12",
+    "version": "1.0.13",
     "devDependencies": {
         "gulp": "^4.0.0",
         "gulp-bump": "^3.1.1",
