@@ -4,4 +4,5 @@
 
 /.vs/VSTS.Robocopy/v14/.suo
 *.vsix
+/.vs/VSTS.Robocopy/v15/Server/sqlite3
 /.vs/VSTS.Robocopy/v15

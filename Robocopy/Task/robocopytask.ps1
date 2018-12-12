@@ -1,7 +1,7 @@
 param (
 	[string]$source,
 	[string]$destination,
-	[string]$files,
+	[array]$files,
 	[string]$copySubDirs,
 	[string]$copySubDirsAll,
 	[string]$purge,
