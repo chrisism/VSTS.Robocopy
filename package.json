@@ -4,7 +4,8 @@
   "private": true,
   "version": "1.1.0",
   "scripts": {
-    "build": "tfx extension create --manifest-globs ./Robocopy/vss-extension.json",
+    "buildx": "tfx extension create",
+    "build": "tfx extension create --manifest-globs ./vss-extension.json",
     "publish": "'tfx extension publish --token ' + config.publish.token +' --auth-type pat ---service-url ' + config.publish.galleryUrl"
   },
   "dependencies": {
