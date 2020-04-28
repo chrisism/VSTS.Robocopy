@@ -1,0 +1,24 @@
+{
+  "id": "jungit-robocopy",
+  "description": "Azure devops pipelines Robocopy task",
+  "private": true,
+  "version": "1.1.0",
+  "scripts": {
+    "build": "tfx extension create --manifest-globs ./Robocopy/vss-extension.json",
+    "publish": "'tfx extension publish --token ' + config.publish.token +' --auth-type pat ---service-url ' + config.publish.galleryUrl"
+  },
+  "dependencies": {
+    "tfx-cli": "0.7.11"
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/chrisism/vsts.robocopy.git"
+  },
+  "author": "Jungerius IT Consultancy",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/chrisism/repository.chrisism/issues"
+  },
+  "homepage": "https://github.com/chrisism/repository.chrisism#readme"
+}
