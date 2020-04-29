@@ -9,7 +9,16 @@ trigger:
 pool:
   vmImage: 'ubuntu-latest'
 
+variables:
+  GitVersion.SemVer: ''
+
 steps:
+- task: UseGitVersion@5
+  inputs:
+    versionSpec: '5.x'
+    updateAssemblyInfo: false
+  displayName: gitversion
+
 - task: NodeTool@0
   inputs:
     versionSpec: '10.x'
@@ -19,3 +28,6 @@ steps:
     npm install
     npm run build
   displayName: 'npm install and build'
+
+- publish: $(System.DefaultWorkingDirectory)/
+  artifact: VsixPackage
