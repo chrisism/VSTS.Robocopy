@@ -8,9 +8,9 @@
     "publish": "tfx extension publish --token $npm_package_config_token --auth-type pat ---service-url $npm_package_config_galleryUrl"
   },
   "config": {
-      "token": "secret",
-      "galleryUrl": "https://marketplace.visualstudio.com/",
-      "serviceUrl": "https://jungerius.visualstudio.com/"
+    "token": "secret",
+    "galleryUrl": "https://marketplace.visualstudio.com/",
+    "serviceUrl": "https://jungerius.visualstudio.com/"
   },
   "dependencies": {
     "tfx-cli": "0.7.11"
