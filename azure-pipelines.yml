@@ -24,12 +24,42 @@ steps:
     PathToFile: '$(Build.SourcesDirectory)/vss-extension.json'
     RegEx: '"version":\s*"\d+\.\d+\.\d"'
     ValueToReplace: '"version": "$(GitVersion.SemVer)"'
-    
+
 - task: RegExMatchReplace@2
   inputs:
     PathToFile: '$(Build.SourcesDirectory)/Task/task.json'
     RegEx: '"Major":\s*\d+'
     ValueToReplace: '"Major": "$(GitVersion.Major)"'
+    
+- task: RegExMatchReplace@2
+  inputs:
+    PathToFile: '$(Build.SourcesDirectory)/Task/task.json'
+    RegEx: '"Minor":\s*\d+'
+    ValueToReplace: '"Minor": "$(GitVersion.Minor)"'
+    
+- task: RegExMatchReplace@2
+  inputs:
+    PathToFile: '$(Build.SourcesDirectory)/Task/task.json'
+    RegEx: '"Patch":\s*\d+'
+    ValueToReplace: '"Patch": "$(GitVersion.Patch)"'
+
+- task: RegExMatchReplace@2
+  inputs:
+    PathToFile: '$(Build.SourcesDirectory)/BackupTask/task.json'
+    RegEx: '"Major":\s*\d+'
+    ValueToReplace: '"Major": "$(GitVersion.Major)"'
+    
+- task: RegExMatchReplace@2
+  inputs:
+    PathToFile: '$(Build.SourcesDirectory)/BackupTask/task.json'
+    RegEx: '"Minor":\s*\d+'
+    ValueToReplace: '"Minor": "$(GitVersion.Minor)"'
+    
+- task: RegExMatchReplace@2
+  inputs:
+    PathToFile: '$(Build.SourcesDirectory)/BackupTask/task.json'
+    RegEx: '"Patch":\s*\d+'
+    ValueToReplace: '"Patch": "$(GitVersion.Patch)"'
 
 - task: NodeTool@0
   inputs:
