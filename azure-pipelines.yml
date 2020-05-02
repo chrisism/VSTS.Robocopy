@@ -19,13 +19,13 @@ steps:
     updateAssemblyInfo: false
   displayName: gitversion
 
-- task: RegExMatchReplace@0
+- task: RegExMatchReplace@2
   inputs:
     PathToFile: '$(Build.SourcesDirectory)/vss-extension.json'
     RegEx: '"version":\s*"\d+\.\d+\.\d"'
     ValueToReplace: '"version": "$(GitVersion.SemVer)"'
-
-- task: RegExMatchReplace@0
+    
+- task: RegExMatchReplace@2
   inputs:
     PathToFile: '$(Build.SourcesDirectory)/Task/task.json'
     RegEx: '"Major":\s*\d+'
