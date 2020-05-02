@@ -19,6 +19,18 @@ steps:
     updateAssemblyInfo: false
   displayName: gitversion
 
+- task: RegExMatchReplace@0
+  inputs:
+    PathToFile: '$(Build.SourcesDirectory)/vss-extension.json'
+    RegEx: '"version":\s*"\d+\.\d+\.\d"'
+    ValueToReplace: '"version": "$(GitVersion.SemVer)"'
+
+- task: RegExMatchReplace@0
+  inputs:
+    PathToFile: '$(Build.SourcesDirectory)/Task/task.json'
+    RegEx: '"Major":\s*\d+'
+    ValueToReplace: '"Major": "$(GitVersion.Major)"'
+
 - task: NodeTool@0
   inputs:
     versionSpec: '10.x'
@@ -26,6 +38,7 @@ steps:
 
 - script: |
     npm install
+    npm version $(GitVersion.SemVer)
     npm run build
   displayName: 'npm install and build'
 
