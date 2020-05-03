@@ -1,6 +1,8 @@
 # Robocopy (VSTS task)
 Robocopy tasks for build and release pipelines in VSTS or TFS.
 
+Master builds: [![Build Status](https://dev.azure.com/jungerius/VSTS%20Extensions/_apis/build/status/chrisism.VSTS.Robocopy?branchName=master)](https://dev.azure.com/jungerius/VSTS%20Extensions/_build/latest?definitionId=2&branchName=master)
+
 Are these VSTS extensions helping you? 
 
 [![](https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=BSMTZP9VKP8QN)
