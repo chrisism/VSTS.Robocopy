@@ -1,3 +1,6 @@
-**/*
-!*.vsix
-!/*.json
+node_modules
+img
+BackupTask
+Task
+*.node_modules
+*.yml
