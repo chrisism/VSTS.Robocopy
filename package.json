@@ -6,13 +6,11 @@
   "version": "1.1.0",
   "scripts": {
     "build": "tfx extension create --manifest-globs ./vss-extension.json",
-    "test-publish": "tfx extension publish --token $npm_package_config_token --auth-type pat ---service-url https://marketplace.visualstudio.com/ --share-with jungerius",
-    "publish": "tfx extension publish --token $npm_package_config_token --auth-type pat ---service-url https://marketplace.visualstudio.com/"
+    "test-publish": "tfx extension publish --token $npm_package_config_token --auth-type pat --share-with jungerius --vsix ./*.vsix ---service-url https://marketplace.visualstudio.com/",
+    "publish": "tfx extension publish --token $npm_package_config_token --auth-type pat --vsix ./*.vsix ---service-url https://marketplace.visualstudio.com/"
   },
   "config": {
-    "token": "secret",
-    "marketUrl": "https://marketplace.visualstudio.com/",
-    "teamUrl": "https://jungerius.visualstudio.com/"
+    "token": "secret"
   },
   "dependencies": {
     "tfx-cli": "0.7.11"
