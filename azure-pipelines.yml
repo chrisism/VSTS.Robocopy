@@ -21,6 +21,18 @@ steps:
 
 - task: RegExMatchReplace@2
   inputs:
+    PathToFile: '$(Build.SourcesDirectory)/package.json'
+    RegEx: '"version":\s*"\d+\.\d+\.\d"'
+    ValueToReplace: '"version": "$(GitVersion.SemVer)"'
+
+- task: RegExMatchReplace@2
+  inputs:
+    PathToFile: '$(Build.SourcesDirectory)/package.json'
+    RegEx: '"vsix":\s*"(.*)\.vsix"'
+    ValueToReplace: '"vsix": "./jungeriusit.jungit-robocopy-$(GitVersion.SemVer).vsix"'
+
+- task: RegExMatchReplace@2
+  inputs:
     PathToFile: '$(Build.SourcesDirectory)/vss-extension.json'
     RegEx: '"version":\s*"\d+\.\d+\.\d"'
     ValueToReplace: '"version": "$(GitVersion.SemVer)"'
