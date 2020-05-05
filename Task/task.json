@@ -110,7 +110,7 @@
 		"helpMarkDown": "Robocopy accepts a few command line options (e.g. /S /E /Z)."
 	}],
 	"execution": {
-		"PowerShell3": {
+		"PowerShell": {
 			"target": "$(currentDirectory)\\robocopytask.ps1",
 			"argumentFormat": "",
 			"workingDirectory": "$(currentDirectory)"
