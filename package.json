@@ -3,7 +3,7 @@
   "name": "jungit-robocopy",
   "description": "Azure devops pipelines Robocopy task",
   "private": true,
-  "version": "1.1.4",
+  "version": "1.1.5",
   "scripts": {
     "build": "tfx extension create --manifest-globs ./vss-extension.json",
     "deploy-task": "tfx build tasks upload --token _@token@_ --auth-type pat --task-path_./Task ---service-url https://jungerius.visualstudio.com/DefaultCollection",
