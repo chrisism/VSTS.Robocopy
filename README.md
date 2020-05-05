@@ -39,7 +39,10 @@ Robocopy, or "Robust File Copy", is a command-line directory and/or file replica
 - **Robocopy options:** Robocopy accepts a few command line options (e.g. /S /E /Z).
 - **Create stamped backup folder:** If set to True then it will create a dated backup folder under the destination folder (e.g. c:\\backup\\2014-05-11).
 
-## Releases
+## Release notes
+
+#### 1.1.3
+  Changed project infrastructure and small fixes.
 
 #### 1.1.0
 - Added support for multiple wildcards.  
