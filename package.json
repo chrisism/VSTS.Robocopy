@@ -6,7 +6,9 @@
   "version": "1.1.0",
   "scripts": {
     "build": "tfx extension create --manifest-globs ./vss-extension.json",
-    "test-publish": "tfx extension publish --token _@token@_ --auth-type pat --share-with jungerius --vsix _@vsix@_ ---service-url https://marketplace.visualstudio.com/",
+    "deploy-task": "tfx build tasks upload --token _@token@_ --auth-type pat --task-path_./Task ---service-url https://jungerius.visualstudio.com/DefaultCollection",
+    "deploy-backuptask": "tfx build tasks upload --token _@token@_ --auth-type pat --task-path_./BackupTask ---service-url https://jungerius.visualstudio.com/DefaultCollection",
+    "deploy": "npm run deploy-task && npm run deploy-backuptask",
     "publish": "tfx extension publish --token _@token@_ --auth-type pat --vsix _@vsix@_ ---service-url https://marketplace.visualstudio.com/"
   },
   "dependencies": {

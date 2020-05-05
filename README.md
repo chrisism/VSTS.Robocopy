@@ -1,11 +1,10 @@
 # Robocopy (VSTS task)
 Robocopy tasks for build and release pipelines in Azure Devops.
 
-| Step | | Status |
-| ------------- | ------------- | ------------- |
-| Build | | [![Build Status](https://dev.azure.com/jungerius/VSTS%20Extensions/_apis/build/status/chrisism.VSTS.Robocopy?branchName=master)](https://dev.azure.com/jungerius/VSTS%20Extensions/_build/latest?definitionId=2&branchName=master) | 
-| Release Test | | [![Test Status](https://vsrm.dev.azure.com/jungerius/_apis/public/Release/badge/23ef30ed-d143-4bff-985d-a3679df39d3f/1/1)](https://vsrm.dev.azure.com/jungerius/_apis/public/Release/badge/23ef30ed-d143-4bff-985d-a3679df39d3f/1/1) |
-| Release Live | | todo |
+| Step | Status |
+| ------------- | ------------- |
+| Build | [![Build Status](https://dev.azure.com/jungerius/VSTS%20Extensions/_apis/build/status/chrisism.VSTS.Robocopy?branchName=master)](https://dev.azure.com/jungerius/VSTS%20Extensions/_build/latest?definitionId=2&branchName=master) | 
+| Release | [![Test Status](https://vsrm.dev.azure.com/jungerius/_apis/public/Release/badge/23ef30ed-d143-4bff-985d-a3679df39d3f/1/1)](https://vsrm.dev.azure.com/jungerius/_apis/public/Release/badge/23ef30ed-d143-4bff-985d-a3679df39d3f/1/1) |
   
 ------
 Are these devops extensions helping you? 
