@@ -28,7 +28,7 @@ steps:
 - task: RegExMatchReplace@2
   inputs:
     PathToFile: '$(Build.SourcesDirectory)/package.json'
-    RegEx: '_$vsix$_'
+    RegEx: '_@vsix@_'
     ValueToReplace: './jungeriusit.jungit-robocopy-$(GitVersion.SemVer).vsix'
 
 - task: RegExMatchReplace@2
